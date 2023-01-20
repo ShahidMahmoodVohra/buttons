@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Quicksand:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',  sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #27282c;
+    gap: 40px;
+}
+
+a{
+    position: relative;
+    background: #444;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    letter-spacing: .1em;
+    font-weight: 400;
+    padding: 10px 30px;
+    transition: 0.5s;
+}
+
+a:hover{
+    background: var(--clr); 
+    color: var(--clr); 
+    letter-spacing: .025em; 
+    box-shadow: 0 0 35px var(--clr);
+}
+
+a::before{
+    content: ''; 
+    position: absolute; 
+    inset:2px; 
+    background: #27282c; 
+}
+
+span{ 
+    position: relative; 
+    z-index: 1;
+}
+
+i{ 
+    position: absolute; 
+    inset: 0; display: block;
+}
+
+
+i::before{
+    content: ''; 
+    position: absolute; 
+    top: -6px; 
+    left: 100%; 
+    width: 10px; 
+    height: 10px; 
+    background: #27282c; 
+    transform: translateX(-50%);
+    border: 2px solid var(--clr); 
+    transition: 0.5s; 
+}
+
+i::after{
+    content: ''; 
+    position: absolute; 
+    bottom: -6px; 
+    left: 0%; 
+    width: 10px; 
+    height: 10px; 
+    background: #27282c; 
+    transform: translateX(-50%);
+    border: 2px solid var(--clr); 
+    transition: 0.5s; 
+}
+
+a:hover i::before {
+    left: 0%; 
+    transform: translate(-50%) rotate(45deg); 
+    box-shadow: 39px 38px var(--clr);
+}
+
+a:hover i::after{
+    left: 100%; 
+    transform: translateX(-50%) rotate(-45deg); 
+    box-shadow: 38px -39px var(--clr);
+} 
+
+
+
+
+
+
+
+/* i::before{content: ''; position: absolute; top: -6px; left: 100%; width: 10px; height: 10px; background: #27282c; transform: translateX(-50%);
+    border: 2px solid var(--clr); transition: 0.5s; }
+
+a:hover i::before {left: 0%; transform: translate(-50%) rotate(45deg); }
+
+i::after{content: ''; position: absolute; bottom: -6px; left: 0%; width: 10px; height: 10px; background: #27282c; transform: translateX(-50%);
+    border: 2px solid var(--clr); transition: 0.5s; }
+
+    a:hover i::after{left: 100%; transform: translateX(-50%) rotate(-45deg); box-shadow: 38px -39px var(--clr);} */
+
+
+    
+
